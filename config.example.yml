@@ -1,0 +1,32 @@
+upstream:
+  url: http://127.0.0.1:11434
+  connect_timeout: 10
+  read_timeout: 300
+
+server:
+  host: 127.0.0.1
+  port: 11435
+  max_policy_body_bytes: 67108864
+
+defaults:
+  think: false
+  options:
+    num_predict: 2048
+
+models:
+  "qwen3:8b":
+    think: false
+  "gpt-oss:20b":
+    think: medium
+    options:
+      num_predict: 8192
+
+profiles:
+  fast:
+    think: false
+    options:
+      num_predict: 1024
+  reasoning:
+    think: high
+    options:
+      num_predict: 8192

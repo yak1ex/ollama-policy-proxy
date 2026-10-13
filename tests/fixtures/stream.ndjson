@@ -1,0 +1,3 @@
+{"model":"qwen3:8b","message":{"role":"assistant","thinking":"brief"},"done":false}
+{"model":"qwen3:8b","message":{"role":"assistant","content":"caption"},"done":false}
+{"model":"qwen3:8b","message":{"role":"assistant","content":""},"done":true,"done_reason":"stop"}

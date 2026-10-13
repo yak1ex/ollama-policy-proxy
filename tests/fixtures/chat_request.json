@@ -1,0 +1,20 @@
+{
+  "model": "qwen3:8b",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Describe this image briefly.",
+      "images": ["aW1hZ2UtYnl0ZXM="]
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "lookup",
+        "parameters": {"type": "object"}
+      }
+    }
+  ],
+  "format": {"type": "object", "properties": {"caption": {"type": "string"}}}
+}

@@ -1,0 +1,10 @@
+schema_version: 1
+source: https://github.com/yak1ex/agentic-coding-templates
+base_release: "2026-09-27"
+base_revision: "b68d62c7a62bf7428144fb64f76700f403c7e26b"
+adopted_at: "2026-10-13"
+last_reviewed_revision: "b68d62c7a62bf7428144fb64f76700f403c7e26b"
+components:
+  - base/AGENTS.md
+  - base/TASKS.md
+  - stacks/python-uv.md
